@@ -1,0 +1,65 @@
+$boolean: false;
+.clase{
+    @include flexElement(column, nowrap, space-between, center);
+    background-color: $bg_color_yellow; 
+    padding: 10px;
+    width: $full_width;
+    @include tablet{
+        background-color: $bg-color-red-300; 
+        @include flexElement(row, nowrap, space-between, center);
+    }
+
+    @include desktop{
+        background-color: $bg-color-blue-300; 
+    }
+    &-element{
+        background-color: $bg_color_green;
+        &__paragraph{
+            color: black;
+            font-size: 20px;
+            @include desktop{
+                color: green;
+                font-size: 28px;
+            }
+            @include large{
+                color: red;
+                font-size: 32px;
+            }
+        }
+        
+        &__link{
+            color: purple;
+            text-decoration: none;
+
+            &--button{
+                background-color: white;
+                padding: 10px 5px;
+            }
+
+            &--normal{
+                color:red;
+                padding: 0px 15px;
+            }
+        }
+
+        &__button{
+            @include buttonElement($bg_color_yellow, $bg_color_green, 50px);
+
+            @include tablet{
+                @include buttonElement($bg-color-blue-100, $bg_color_green, 50px);
+                font-size: 30px;
+            }
+            @include large{
+                font-size: 50px;
+                @if $boolean == true{
+                    visibility: hidden;
+                }
+                
+            }
+        }
+
+        &__title{
+            @include titleElement(45px, center);
+        }
+    }
+}

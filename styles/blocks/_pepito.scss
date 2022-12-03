@@ -1,0 +1,30 @@
+div{
+    @include flexElement(column, wrap, flex-end, flex-start);
+    background-color: blue;
+    p{
+        @include paragraphElement();
+        a{
+            color:white;
+        }
+
+        .button__element{
+            display: block;
+            width: auto;
+
+            &--green{
+                @include buttonElement(green, white, 10px 20px);
+            }
+            &--red{
+                @include buttonElement($bg-color-red-400, rgb(232, 252, 115), 10px 30px);
+            }
+            &--blue{
+                @include buttonElement($bg-color-blue-400, rgb(162, 245, 253), 20px 20px);
+            }
+        }
+
+        
+    }
+    .title__element{
+        @include titleElement(30px, left);
+    }
+}
