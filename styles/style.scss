@@ -3,14 +3,15 @@
 /*IMPORTANTE TRAER PRIMERO VARIABLES*/
 
 @import "./utilities/colors";
-@import "./utilities/sizes";
 @import "./utilities/mixin";
 @import "./utilities/responsive";
 
 /*DESPUES DE LAS VARIABLES TRAEMOS LOS BLOQUES*/
 
 @import "./blocks/clase";
-@import "./blocks/pepito";
+@import "./blocks/ficha";
+@import "./blocks/botones";
+
 
 
 

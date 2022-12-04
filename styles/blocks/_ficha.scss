@@ -1,0 +1,159 @@
+.ficha--reverse {
+  @include movil {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+.ficha--normal {
+  @include movil {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+.ficha--fondoBlanco {
+  background-color: white;
+}
+.ficha--fondoGris {
+  background-color: #f4ede4 !important;
+}
+
+.ficha {
+  &__persona {
+    font-weight: 700;
+  }
+  &__cargo {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+
+  /*
+    @include movil {
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction:row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+    }
+    */
+
+  &__BIM {
+    @include desktop {
+      display: none;
+    }
+  }
+  &__BIF {
+    padding-bottom: 40px;
+    @include movil {
+      display: none;
+    }
+  }
+  &__bloqueTexto {
+    max-width: 600px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__subBloque {
+    max-width: 90%;
+    @include desktop {
+      padding-left: 20%;
+    }
+  }
+
+  &__titulo {
+    padding-top: 30px;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__cuerpo {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+      Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4444;
+    letter-spacing: normal;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  &__pie {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+      Tahoma, Arial, sans-serif;
+    line-height: 1.4444;
+    letter-spacing: normal;
+    font-size: 1.125rem;
+    display: inline-block;
+    font-weight: 400;
+  }
+}
+
+.ficha2 {
+  &__cabecera {
+    text-align: center;
+    @include desktop {
+      font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI",
+        Tahoma, Arial, sans-serif;
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -0.8px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    @include movil {
+      font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI",
+        Tahoma, Arial, sans-serif;
+      font-weight: 700;
+      line-height: 1.1875;
+      letter-spacing: -0.3px;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+  }
+  &__leyenda {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+      Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4444;
+    letter-spacing: normal;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  &__botones{
+    width: 100%;    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    @include movil{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+    @include desktop{
+        display: inline-flex;
+    }
+  }
+}

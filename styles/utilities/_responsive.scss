@@ -1,17 +1,21 @@
-$landscape: 550px;
-$tablet: 768px;
+// $landscape: 1px;
+// $tablet: 768px;
+// $desktop: 992px;
+// $large: 1200px;
+
+$landscape: 991px;
+$tablet: 991px;
 $desktop: 992px;
-$large: 1200px;
+$large: 992px;
 
-
-@mixin landscape{
-    @media screen and (min-width: $landscape){
+@mixin movil{
+    @media screen and (max-width: $landscape){
         @content;
     }
 }
 
-@mixin tablet{
-    @media screen and (min-width: $tablet){
+@mixin tablet{    
+    @media screen and (max-width: $tablet){        
         @content;
     }
 }

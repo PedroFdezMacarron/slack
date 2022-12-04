@@ -1,0 +1,43 @@
+
+
+.seccion {
+    &-cabecera1 {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 32px;;
+    }
+    &-hijo{
+        padding: 20px;
+        font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+          Arial, sans-serif;
+        color: white;
+        display: flex;
+        &-titulo{
+            font-size: 2.75rem;
+            font-weight: 700;
+      
+              @include movil {
+                text-align: center;
+              }
+      
+                @include desktop {
+                  text-align: left;
+                }
+      
+                &__resaltado {
+                  color: $fn-color-naranja;
+                }
+
+        }
+        &-subtitulo {
+            font-weight: 400;
+            font-size: 1rem;    
+          }
+
+    }
+
+
+}
+
+
