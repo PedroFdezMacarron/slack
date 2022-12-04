@@ -38,19 +38,9 @@
     font-size: 14px;
     padding-bottom: 40px;
   }
-
-  /*
-    @include movil {
-      display: flex;
-      flex-direction: column;
-    }
-    @include desktop {
-      display: flex;
-      flex-direction:row;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-    }
-    */
+  &__parrafoFinal{
+    font-size: 14px;;
+  }
 
   &__BIM {
     @include desktop {
@@ -108,6 +98,8 @@
 }
 
 .ficha2 {
+  padding-top: 70px;;  
+  padding-bottom: 70px;
   &__cabecera {
     text-align: center;
     @include desktop {
@@ -130,6 +122,9 @@
     }
   }
   &__leyenda {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
       Tahoma, Arial, sans-serif;
     font-weight: 400;
@@ -138,22 +133,64 @@
     font-size: 1.125rem;
     margin-bottom: 1rem;
   }
-  &__botones{
-    width: 100%;    
+  &__botones {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
+    @include movil {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+    @include desktop {
+      display: inline-flex;
+    }
+  }
+  &__pie {
+    width: 100%;
+    @include movil {
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+  &__pie{
+    width: 100%;
+    text-align: center;
     @include movil{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        gap:20px;
+        align-items: center;        
     }
     @include desktop{
-        display: inline-flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly
     }
+
+  }
+  
+  &__ratio {
+    width: 55%;   
+  }
+  &__valor {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,Arial, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #611f69;
+  }
+  &__txt{
+    font-size: 15px;
+    min-height: 40px;
   }
 }
