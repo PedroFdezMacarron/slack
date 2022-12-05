@@ -16,6 +16,7 @@
   color: black;
   border: 0px solid $fn-color-morado;
   
+  
   @include movil{
     text-align: left;
     display: flex;
@@ -24,8 +25,8 @@
   }
   @include desktop{
     display: flex;
-    justify-content: left;
-    
+    justify-content: left;  
+    min-width: 115px;
   }
 
   
