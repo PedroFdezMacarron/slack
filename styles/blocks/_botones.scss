@@ -1,26 +1,57 @@
 .button {
   border-radius: 3px;
   background-color: white;
-  color: #611f69;
+  color: $fn-color-morado;
   padding: 10px;
   text-align: center;
   font-weight: 600;
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 350px;
+
 }
 
+.button--limpio{
+  background-color: transparent;
+  color: black;
+  border: 0px solid $fn-color-morado;
+  
+  @include movil{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include desktop{
+    display: flex;
+    justify-content: left;
+    
+  }
+
+  
+}
+.button--conImg{
+  @include desktop{
+    display: none;
+  }
+  @include movil{
+   
+  }
+}
+.button--text{
+
+}
 
 .button--blanco {
   background-color: #fff;
-  color: #611f69;
-  border: 1px solid #611f69;
+  color: $fn-color-morado;
+  border: 1px solid $fn-color-morado;
 }
 
 .button--morado {
-  background-color: #611f69;
+  background-color: $bg-color-morado;
   color: #fff;
-  border: 1px solid #444;
+  border: 1px solid white;
 }
 
 .ficha3__boton {

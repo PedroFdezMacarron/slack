@@ -134,7 +134,7 @@ $boolean: false;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #f4ede4 !important;
+  background-color: $bg_gris;
   padding-bottom: 20px;
 
   &-titulo {
