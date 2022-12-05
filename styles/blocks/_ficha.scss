@@ -35,7 +35,6 @@
 .ficha {
   &__video{
     height: 100px;
-
   }
   &__persona {
     font-weight: 700;
@@ -198,6 +197,21 @@
   &__txt {
     font-size: 15px;
     min-height: 40px;
+  }
+}
+
+.pieGeneral{
+  &__copy{
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.manita{
+  &__img{
+    position:fixed;
+    right: 40px;
+    bottom: 20px;
   }
 }
 
