@@ -9,6 +9,9 @@ $boolean: false;
 }
 
 .svg {
+  @include desktop {
+    display: none;
+  }
   max-height: 20px;
 }
 
@@ -30,6 +33,57 @@ $boolean: false;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  @include desktop{
+    padding-bottom: 50px;
+    min-height: 60vh;
+  }
+  
+ 
+  &__pie{
+    color:white;
+    width: 60%;
+    height: 40px;;
+    text-align: justify;
+    font-weight: 600;
+    @include movil {
+      display: none;    
+    }
+  }
+
+    &__menuPrincipal {
+
+      @include movil {
+        display: none;
+      }
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+      }
+      color: white;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;      
+      font-weight: 700;
+
+      &--opciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;              
+        align-items: center;
+        gap: 30px;
+      }
+      
+      &--masOpciones {            
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+      }
+      
+    }
 
   &-cabecera1 {
     display: flex;
@@ -37,40 +91,21 @@ $boolean: false;
     justify-content: space-between;
     padding: 32px;
 
-    &-menuPrincipal {
-      color: white;
-      &-opciones {
-        @include movil {
-          display: none;
-        }
-        @include desktop {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-      }
-      &-masOpciones {
-        @include movil {
-          display: none;
-        }
-        @include desktop {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-      }
-    }
+
   }
   &-hijos {
     @include movil {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      
     }
     @include desktop {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      align-items: center;
+      padding: 20px;
     }
 
     &-hijo2 {
@@ -78,7 +113,7 @@ $boolean: false;
       justify-items: center;
       align-items: center;
       img{
-        max-width: 100%;
+        max-width: 100%;                
       }
     }
     &-hijo1 {
@@ -115,23 +150,34 @@ $boolean: false;
           text-align: left;
         }
       }
+
+
+
       &-pie {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        &-boton {
-          border-radius: 5px;
-          background-color: #fff;
-          color: #611f69;
-          fill: #611f69;
-          box-shadow: inset 0 0 0 1px #611f69;
-          padding: 20px;
-          text-align: center;
+        @include movil{
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;    
+          width: 100%;
+          align-items: center;   
         }
+        @include desktop{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 30px;    
+          width: 80%;
+          align-items: center;   
+          gap:20px;
+        }
+
+        
       }
     }
   }
 }
+
+
 
 .seccion2 {
   display: flex;

@@ -16,18 +16,27 @@
 
       <div class="seccion">
         <div class="seccion-cabecera1">
-          <img class="svg" src="images/logo.svg"/>
-          <nav class="seccion-cabecera1-menuPrincipal">            
-            <ul class="seccion-cabecera1-menuPrincipal-opciones">
+          <img class="svg-logo" src="images/logo.svg"/>
+          <nav class="seccion__menuPrincipal">            
+            
+            <ul class="seccion__menuPrincipal--opciones">
               <li>Producto</li>
               <li>Enterprise</li>
               <li>Recursos</li>
               <li>Precio</li>
             </ul>
-            <div class="seccion-cabecera1-menuPrincipal-masOpciones">              
-              <a1  href="">Conectarse</a>
-              <a1  href="">HABLAR CON EL EQUIPO DE VENTAS</a>
-              <a1  href="">PROBARLO GRATIS</a>
+
+            <div class="seccion__menuPrincipal--masOpciones">              
+              <a1  href="">Conectarse</a1>            
+
+              <a href="#" class="button button--morado button--estrecho">
+                  <span>HABLAR CON EL EQUIPO DE VENTAS</span>
+              </a>
+
+              <a href="#" class="button button--blanco button--estrecho">
+                  <span>PROBARLO GRATIS</span>
+              </a>
+
             </div>
           </nav>
           <img class="svg" src="images/hamburguesa.svg" height="40px" />
@@ -48,11 +57,13 @@
               <a href="#" class="button button--blanco">
                 <span>CONSIGUE SLACK PARA ANDROID</span>
               </a>
+              <p class="seccion__pie">Slack puede probarse de forma gratuita durante el tiempo que se quiera</p>
             </div>
           </div>
           <div class="seccion-hijos-hijo2">
             <img src="images/fondo1.png" />
           </div>
+         
         </div>
       </div>
 
@@ -307,7 +318,7 @@
           <span>Contáctanos</span>          
         </a>
         <a href="#" class="fichaFinal__links">
-          <span>👌Cambiar de región </span>         
+          <span><img src="./images/globe-svgrepo-com.svg"> Cambiar de región </span>         
         </a>
         <a href="#" class="fichaFinal__links">
           <img src="./images/descargar.svg"> <span>Descargar Slak</span>

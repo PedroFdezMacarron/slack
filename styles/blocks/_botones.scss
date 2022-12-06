@@ -1,16 +1,18 @@
 .button {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: white;
   color: $fn-color-morado;
   padding: 10px;
   text-align: center;
   font-weight: 600;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   min-width: 350px;
 
 }
-
+.button--estrecho{
+  min-width: 0px;
+}
 .button--limpio{
   background-color: transparent;
   color: black;
@@ -52,6 +54,9 @@
   color: #fff;
   border: 1px solid white;
 }
+
+
+
 
 .ficha3__boton {
     padding: 20px;;
